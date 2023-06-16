@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="show-userdetails.html">Profile</a></li>
+        <li><button onclick="addNewBlog()">Add New Blog</button></li>
+        <li><button onclick="logout()">Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Dashboard</h1>
+    
+    <table id="blog-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author
+            <div class="filter-container">
+              <select id="author-filter">
+              <option value="all">All</option>
+              </select>
+            </div>
+          </th>
+          <th>Category 
+            <div class="filter-container"></div>
+            <select id="category-filter">
+              <option value="all">All</option>
+              
+            </select>
+          </div>
+        </th>
+          <th id="date-header">Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="blog-table-body"></tbody>
+    </table>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>
+
