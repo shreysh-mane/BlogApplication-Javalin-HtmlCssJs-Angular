@@ -29,12 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then(data => {
         
-        // if (data!=null) {
+       
             localStorage.setItem('userData', JSON.stringify(profileData));
             window.location.href = 'dashboard.html';
-        // }else {
-        //     errorMessage.textContent = 'Invalid credentials. Please try again.';
-        // }
+      
     })
     .catch(error => {
         console.error('Error:', error);
@@ -42,16 +40,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     }
   
-    function displayErrorMessage(message) {
-      const errorMessage = document.getElementById('error-message');
-      errorMessage.textContent = message;
-      errorMessage.style.display = 'block';
-    }
-  
-    function displaySuccessMessage(message) {
-      const successMessage = document.getElementById('success-message');
-      successMessage.textContent = message;
-      successMessage.style.display = 'block';
-    }
   });
   

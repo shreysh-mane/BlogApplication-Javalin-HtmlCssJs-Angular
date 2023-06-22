@@ -1,11 +1,11 @@
-/* Global Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Header Styles */
+
 header {
     background-color: #333;
     color: #fff;
@@ -44,7 +44,7 @@ nav ul li button:hover {
     background-color: #555;
 }
 
-/* Main Styles */
+
 main {
     padding: 20px;
 }
@@ -65,7 +65,7 @@ th {
     background-color: #f5f5f5;
 }
 
-/* Form Styles */
+
 form div,
 .form-group {
     margin-bottom: 10px;
@@ -108,7 +108,7 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Registration Page Styles */
+
 .container {
     max-width: 400px;
     margin: 0 auto;
@@ -121,7 +121,7 @@ h1 {
     text-align: center;
 }
 
-/* Show Blog Page Styles */
+
 .container {
     max-width: 800px;
     margin: 20px auto;

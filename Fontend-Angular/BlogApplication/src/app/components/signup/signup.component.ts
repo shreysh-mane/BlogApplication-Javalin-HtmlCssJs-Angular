@@ -22,7 +22,7 @@ export class SignupComponent {
       .subscribe(
         () => {
           alert('Registration successful!');
-          this.router.navigate(['/signin']); // Route to the signin component
+          this.router.navigate(['/signin']); 
         },
         (error) => {
           console.error('Error:', error);
