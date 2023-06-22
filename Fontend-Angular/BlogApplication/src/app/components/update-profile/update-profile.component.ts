@@ -24,10 +24,10 @@ export class UpdateProfileComponent implements OnInit {
       name: ['', Validators.required],
       password: ['', Validators.required],
       number: ['', Validators.required],
-      email: [''] // Will be set with user email from localStorage
+      email: [''] 
     });
 
-    // Set email value from localStorage
+    
     const userData = JSON.parse(localStorage.getItem('userData')!);
     if (userData) {
       this.profileForm.patchValue({
@@ -45,7 +45,8 @@ export class UpdateProfileComponent implements OnInit {
       name: this.profileForm.value.name,
       password: this.profileForm.value.password,
       number: this.profileForm.value.number,
-      email: this.profileForm.value.email
+      email: this.profileForm.value.email,
+      id:JSON.parse(localStorage.getItem('userData')!).id
     };
 
     const userId = JSON.parse(localStorage.getItem('userData')!).id;

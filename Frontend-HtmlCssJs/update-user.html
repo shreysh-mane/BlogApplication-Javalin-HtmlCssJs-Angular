@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Profile</title>
+  <link rel="stylesheet" type="text/css" href="update-profile.component.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Update Profile</h1>
+    <p id="error-message" class="error-message"></p>
+    <p id="success-message" class="success-message"></p>
+    <form id="update-profile-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <input type="submit" value="Update Profile">
+    </form>
+  </div>
+
+  <script src="update-profile.component.js"></script>
+</body>
+</html>

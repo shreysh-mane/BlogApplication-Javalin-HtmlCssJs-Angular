@@ -10,7 +10,10 @@ function displayLoggedInUserDetails() {
       `;
     }
   }
-  
+
+  function updateUser(){
+    window.location.href = 'update-user.html';
+  }
 
 displayLoggedInUserDetails();
   
