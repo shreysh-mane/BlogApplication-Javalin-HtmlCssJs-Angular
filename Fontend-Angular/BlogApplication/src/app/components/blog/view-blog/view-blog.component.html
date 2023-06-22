@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Blog Details</h1>
+    <div id="blog-details">
+      <h2>{{ blog.title }}</h2>
+      <p>Category: {{ blog.category }}</p>
+      <p>Date: {{ blog.date }}</p>
+      <p>{{ blog.content }}</p>
+      <img [src]="blog.featuredImage" alt="Blog Image">
+    </div>
+    <div class="button-container" *ngIf="loggedInUserId === blog.creatorId">
+      <button (click)="updateBlog()">Update</button>
+      <button (click)="deleteBlog()">Delete</button>
+    </div>
+  </div>
+  

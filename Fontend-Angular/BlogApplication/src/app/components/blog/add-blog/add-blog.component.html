@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Add Blog</h1>
+    <p id="errorMessage">{{ errorMessage }}</p>
+    <form (submit)="handleAddBlog($event)" id="add-blog-form">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required [(ngModel)]="blog.title">
+      </div>
+      <div class="form-group">
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required [(ngModel)]="blog.content"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select id="category" name="category" required [(ngModel)]="blog.category">
+          <option value="technology">Technology</option>
+          <option value="travel">Travel</option>
+          <option value="lifestyle">Lifestyle</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required [(ngModel)]="blog.date">
+      </div>
+      <div class="form-group">
+        <label for="featured-image">Featured Image URL:</label>
+        <input type="text" id="featured-image" name="featured-image" required [(ngModel)]="blog.featuredImage">
+      </div>
+      <input type="submit" value="Save Blog">
+    </form>
+  </div>
+  
