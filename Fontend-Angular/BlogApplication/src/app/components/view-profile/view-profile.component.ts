@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/service/user/user.service';
 
 @Component({
@@ -8,12 +8,14 @@ import { UserService } from 'src/app/service/user/user.service';
   styleUrls: ['./view-profile.component.css']
 })
 export class ViewProfileComponent implements OnInit {
+  [x: string]: any;
   profile: any;
   userId:any;
 
   constructor(
     private route: ActivatedRoute,
-    private userService:UserService
+    private userService:UserService,
+    private router:Router
   ) { }
 
   ngOnInit(): void {
@@ -34,5 +36,8 @@ export class ViewProfileComponent implements OnInit {
       );
   }
 
+  updateProfile(){
+    this.router.navigate(['update-user']);
+  }
   
 }

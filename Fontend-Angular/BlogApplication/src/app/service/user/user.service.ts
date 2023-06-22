@@ -15,5 +15,10 @@ export class UserService {
     return this.http.get<any>(url);
   }
 
+  updateProfile(userId: number, data: any): Observable<any> {
+    const url = `${this.apiUrl}/${userId}`;
+    return this.http.put(url, data);
+  }
+
 
 }

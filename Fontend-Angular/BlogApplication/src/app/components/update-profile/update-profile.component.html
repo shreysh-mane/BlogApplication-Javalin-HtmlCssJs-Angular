@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Update Profile</h1>
+    <form [formGroup]="profileForm" (ngSubmit)="updateProfile()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password" required>
+      </div>
+      <div class="form-group">
+        <label for="number">Number:</label>
+        <input type="text" id="number" formControlName="number" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" [disabled]="profileForm.invalid">Update Profile</button>
+      </div>
+    </form>
+  </div>
+  

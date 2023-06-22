@@ -16,6 +16,7 @@ import { ViewBlogComponent } from './components/blog/view-blog/view-blog.compone
 import { UpdateBlogComponent } from './components/blog/update-blog/update-blog.component';
 import { AddBlogComponent } from './components/blog/add-blog/add-blog.component';
 import { ViewProfileComponent } from './components/view-profile/view-profile.component';
+import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
 
 
 
@@ -29,6 +30,7 @@ import { ViewProfileComponent } from './components/view-profile/view-profile.com
     UpdateBlogComponent,
     AddBlogComponent,
     ViewProfileComponent,
+    UpdateProfileComponent,
 
   ],
   imports: [

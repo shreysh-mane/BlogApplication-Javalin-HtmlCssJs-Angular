@@ -7,6 +7,7 @@ import { ViewBlogComponent } from './components/blog/view-blog/view-blog.compone
 import { UpdateBlogComponent } from './components/blog/update-blog/update-blog.component';
 import { AddBlogComponent } from './components/blog/add-blog/add-blog.component';
 import { ViewProfileComponent } from './components/view-profile/view-profile.component';
+import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/signin', pathMatch: 'full' }, 
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'view-blog/:id', component: ViewBlogComponent },
   { path: 'update-blog/:id', component: UpdateBlogComponent },
   { path: 'profile', component: ViewProfileComponent },
-  {path:   'add-blog', component: AddBlogComponent}
+  {path:   'add-blog', component: AddBlogComponent},
+  {path:   'update-user', component: UpdateProfileComponent},
   
 ];
 
