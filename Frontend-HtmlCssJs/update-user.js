@@ -20,22 +20,21 @@ document.addEventListener('DOMContentLoaded', () => {
       };
   
         const userId = JSON.parse(localStorage.getItem('userData')).id;
-        fetch(`http://localhost:9002/blog-posts/${userId}`, {
+        fetch(`http://localhost:9001/users/${userId}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(userCredentials)
+        body: JSON.stringify(profileData)
     })
-    .then(response => response.json())
     .then(data => {
         
-        if (data!=null) {
-            localStorage.setItem('userData', JSON.stringify(data));
+        // if (data!=null) {
+            localStorage.setItem('userData', JSON.stringify(profileData));
             window.location.href = 'dashboard.html';
-        }else {
-            errorMessage.textContent = 'Invalid credentials. Please try again.';
-        }
+        // }else {
+        //     errorMessage.textContent = 'Invalid credentials. Please try again.';
+        // }
     })
     .catch(error => {
         console.error('Error:', error);

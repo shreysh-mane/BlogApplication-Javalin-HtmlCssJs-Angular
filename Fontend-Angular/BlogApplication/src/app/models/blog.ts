@@ -6,5 +6,5 @@ export interface Blog {
     date: string;
     featuredImage: string;
     creatorId: string;
-  }
+}
   
